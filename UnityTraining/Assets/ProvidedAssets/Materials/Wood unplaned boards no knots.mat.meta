@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 0d89d9f924a77ae4f862258d93cc4487
+labels:
+- PBR
+- bare
+- material
+- texture
+- rough
+- raw
+- wall
+- wood
+- plank
+- planks
+- board
+- billboard
+- clapboard
+- floor
+- chipboard
+- table
+- unplaned
+- pine
+timeCreated: 1442979504
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

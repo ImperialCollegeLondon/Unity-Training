@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 9685d1d69ba254947babb4d8efc6f0c6
+labels:
+- PBR
+- material
+- texture
+- wall
+- tile
+- tiles
+- matte
+- mat
+- dusty
+- ceramic
+- decorative
+- semi-matte
+- particles
+- facade
+- exterior
+- interior
+timeCreated: 1443738636
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

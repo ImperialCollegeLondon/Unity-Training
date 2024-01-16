@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: eb7663152e0363447ad9e779f2ee4bad
+labels:
+- PBR
+- material
+- texture
+- wall
+- tile
+- tiles
+- generic
+- ordinary
+- common
+- clean
+- new
+- decorative
+- matte
+- mat
+- facade
+- exterior
+- interior
+- ceramic
+- unused
+- semi-matte
+timeCreated: 1443771566
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
