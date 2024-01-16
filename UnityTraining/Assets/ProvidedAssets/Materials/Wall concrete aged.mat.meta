@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: f760d9d366b19794ea9eb787b920622c
+labels:
+- concrete
+- spotty
+- generic
+- common
+- ordinary
+- material
+- texture
+- patches
+- bare
+- PBR
+- weathered
+- used
+- dirty
+- old
+- grunge
+- aged
+- grungy
+timeCreated: 1442152232
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

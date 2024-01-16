@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: a40b7a0df105375408a94ade39743203
+labels:
+- PBR
+- material
+- texture
+- wall
+- tile
+- tiles
+- matte
+- mat
+- semi-matte
+- clean
+- new
+- decorative
+- stone
+- ceramic
+- facade
+- exterior
+- interior
+- pattern
+timeCreated: 1443772600
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

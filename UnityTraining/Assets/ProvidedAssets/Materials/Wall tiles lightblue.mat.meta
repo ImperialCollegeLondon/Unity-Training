@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 1d19214fbd3b8f1419dfb11ab037d467
+labels:
+- PBR
+- material
+- texture
+- wall
+- tile
+- tiles
+- generic
+- ordinary
+- common
+- clean
+- new
+- decorative
+- glossy
+- shiny
+- facade
+- exterior
+- interior
+- ceramic
+timeCreated: 1443669493
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

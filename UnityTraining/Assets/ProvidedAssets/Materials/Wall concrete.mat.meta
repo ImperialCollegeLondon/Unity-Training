@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 28eeb181d6e2ff74db61ca05d9957e59
+labels:
+- concrete
+- spotty
+- generic
+- common
+- ordinary
+- material
+- texture
+- patches
+- bare
+- PBR
+- weathered
+timeCreated: 1438778247
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
