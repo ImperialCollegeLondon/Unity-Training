@@ -1,17 +1,18 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class TimerController : MonoBehaviour 
 {
-    public TMP_Text timeText; //A reference to the text UI object that will show the time on the screen
+    //A reference to the text UI object that will
+    //show the time on the screen
+    public TMP_Text timeText; 
     private float timeOfGameStart;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Save the current time in our variable
         timeOfGameStart = Time.time;
     }
 
