@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class FinishLineController : MonoBehaviour
 {
-    public GameController gameController;
-
     //Unity calls OnTriggerEnter automatically when two colliders meet (and one of them is a trigger)
     private void OnTriggerEnter(Collider coll)
     {
@@ -13,10 +11,7 @@ public class FinishLineController : MonoBehaviour
         //tell the GameController to finish the game
         if (coll.gameObject.tag == "Player")
         {
-            gameController.FinishGame();
-
-            //Turn this script off, so we don't keep recognising collisions and playing sounds
-            enabled = false;
+            Debug.Log("Player collided with the finish line!");
         }
     }
 }

@@ -12,12 +12,12 @@ public class FatalObjectController : MonoBehaviour
         audioSource = GetComponent<AudioSource>(); //Save a reference to the AudioSource
     }
 
-    //Unity calls OnTriggerEnter automatically when two colliders meet (and one of them is a trigger)
-    private void OnTriggerEnter(Collider other)
+    //Unity calls OnCollisionEnter automatically when two colliders meet (when neither are trigger, and one has a RigidBody)
+    private void OnCollisionEnter(Collision coll)
     {
         //If the player enters the fatal object's trigger collider...
         //Play the sound, and tell the GameController to reset the game
-        if (other.gameObject.tag == "Player")
+        if (coll.gameObject.tag == "Player")
         {
             audioSource.Play();
             gameController.ResetGame();

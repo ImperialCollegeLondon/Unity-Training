@@ -13,11 +13,11 @@ public class FinishLineController : MonoBehaviour
     }
 
     //Unity calls OnTriggerEnter automatically when two colliders meet (and one of them is a trigger)
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider coll)
     {
         //If the player enters the finish line's trigger collider...
         //Play the sound, and tell the GameController to finish the game
-        if (other.gameObject.tag == "Player")
+        if (coll.gameObject.tag == "Player")
         {
             audioSource.Play();
             gameController.FinishGame();

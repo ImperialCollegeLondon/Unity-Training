@@ -20,11 +20,11 @@ public class PickupController : MonoBehaviour
     }
 
     //Unity calls OnTriggerEnter automatically when two colliders meet (and one of them is a trigger)
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider coll)
     {
         //If the player enters the pickup's trigger collider, and the pickup hasn't been picked-up
         //Tell the GameController to give us score, play the sound, and make the pickup dissapear
-        if (other.gameObject.tag == "Player" && !pickedUp)
+        if (coll.gameObject.tag == "Player" && !pickedUp)
         {
             gameController.IncreaseScore();
             audioSource.Play();
