@@ -33,12 +33,6 @@ public class PlayerController : MonoBehaviour
         {
             Jump();         
         }
-
-        //We'll wire this up to our FatalObjectController eventually, for now, let's just link it user input
-        if (Input.GetButtonDown("Fire2")) //"Fire" is the right click on a mouse, or the 'B' button on a controller
-        {
-            Respawn();
-        }
     }
 
     void FixedUpdate()
@@ -57,7 +51,7 @@ public class PlayerController : MonoBehaviour
     public void Respawn()
     {
         //Move the GameObject back to where it started, and cancel all velocity 
-        gameObject.transform.position = startPosition;
+        transform.position = startPosition;
         rigidbody.velocity = Vector3.zero;
         rigidbody.angularVelocity = Vector3.zero;
     }

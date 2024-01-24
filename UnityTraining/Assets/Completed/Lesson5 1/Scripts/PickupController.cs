@@ -6,6 +6,7 @@ public class PickupController : MonoBehaviour
 {
     public GameController gameController;
 
+    private AudioSource audioSource;
     private Renderer renderer;
     private Light light;
 
@@ -14,7 +15,8 @@ public class PickupController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        renderer = gameObject.GetComponent<Renderer>(); //Save a reference to the renderer!
+        audioSource = gameObject.GetComponent<AudioSource>(); //Save a reference to the AudioSource
+        renderer = gameObject.GetComponent<Renderer>(); //Also save a reference to the renderer!
         light = gameObject.GetComponent<Light>(); //And for the light I've also added to the pickup GameObject
     }
 
@@ -22,12 +24,13 @@ public class PickupController : MonoBehaviour
     private void OnTriggerEnter(Collider coll)
     {
         //If the player enters the pickup's trigger collider, and the pickup hasn't been picked-up
-        //Tell the GameController to give us score, and make the pickup dissapear
+        //Tell the GameController to give us score, play the sound, and make the pickup dissapear
         if (coll.gameObject.tag == "Player" && !pickedUp)
         {
             gameController.IncreaseScore();
+            audioSource.Play();
 
-            //Can't just set the pickup GameObject to inactive, as that will stop the audiosource we'll be adding later on!
+            //Can't just set the pickup GameObject to inactive, as that will stop the audiosource!
             renderer.enabled = false; //Hides the gameobject
             light.enabled = false; //Make the light dissapear too!
 

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class FatalObjectController : MonoBehaviour
 {
-    public GameController gameController;
-
     //Unity calls OnCollisionEnter automatically when two colliders meet (when neither are trigger, and one has a RigidBody)
     private void OnCollisionEnter(Collision coll)
     {
@@ -13,7 +11,7 @@ public class FatalObjectController : MonoBehaviour
         //Tell the GameController to reset the game
         if (coll.gameObject.tag == "Player")
         {
-            gameController.ResetGame();
+            Debug.Log("Player collided with fatal object!");
         }
     }
 }

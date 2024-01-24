@@ -488,7 +488,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &447834629
 GameObject:
@@ -992,7 +992,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -1293,7 +1293,7 @@ Transform:
   m_Children:
   - {fileID: 1944170915}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &785814380
 MonoBehaviour:
@@ -1409,7 +1409,7 @@ RectTransform:
   m_Children:
   - {fileID: 138417213}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1460,7 +1460,7 @@ Transform:
   - {fileID: 587247283}
   - {fileID: 765418882}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &880040534
 GameObject:
@@ -1852,7 +1852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73a691aadf6a97640a3d7f2497c8309c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballToFollow: {fileID: 785814379}
+  ballToFollow: {fileID: 785814373}
 --- !u!1 &1132322826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,54 +1891,8 @@ Transform:
   - {fileID: 1974141250}
   - {fileID: 449286098}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1156957497
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1156957499}
-  - component: {fileID: 1156957500}
-  m_Layer: 0
-  m_Name: GameController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1156957499
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156957497}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.37873545, y: 0.73203045, z: 3.544586}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1156957500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156957497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5418ba23ec5a06840b54275efc95a770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerController: {fileID: 785814380}
-  timerController: {fileID: 808418098}
 --- !u!1 &1238129926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2623,7 +2577,7 @@ GameObject:
   - component: {fileID: 1873124207}
   m_Layer: 0
   m_Name: Lava
-  m_TagString: Fatal
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2712,7 +2666,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1873124207
 MonoBehaviour:
@@ -2726,7 +2680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87c82e6235c66249857c004b01c2934, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameController: {fileID: 1156957500}
 --- !u!1 &1944170914
 GameObject:
   m_ObjectHideFlags: 0
@@ -3175,7 +3128,7 @@ GameObject:
   - component: {fileID: 2105551477}
   m_Layer: 6
   m_Name: FinishLine
-  m_TagString: FinishLine
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3196,7 +3149,7 @@ Transform:
   - {fileID: 1771684033}
   - {fileID: 1630589468}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2105551474
 BoxCollider:
@@ -3281,4 +3234,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bca6c3f48b9be84cb80df5e893c8155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameController: {fileID: 1156957500}
