@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform ballToFollow;
+    public GameObject ballToFollow;
     private Vector3 cameraOffset;
 
     // Start is called before the first frame update
@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
         Debug.Log("Start!");
 
         //Get the vector from the ball to the camera
-        cameraOffset = transform.position - ballToFollow.position;
+        cameraOffset = gameObject.transform.position - ballToFollow.transform.position;
     }
 
     // Update is called once per frame
@@ -23,6 +23,6 @@ public class CameraController : MonoBehaviour
 
         //Set the position of the camera equal to the ball, PLUS the offset vector we found at the start
         //This means the camera will always stay in the same position, relative to the ball
-        transform.position = ballToFollow.position + cameraOffset;
+        gameObject.transform.position = ballToFollow.transform.position + cameraOffset;
     }
 }

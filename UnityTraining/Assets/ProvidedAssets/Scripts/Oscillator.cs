@@ -13,7 +13,7 @@ public class Oscillator : MonoBehaviour
     void Start()
     {
         //Save the position of the GameObject when we start
-        initialPos = transform.position;
+        initialPos = gameObject.transform.position;
     }
 
     void Update()
@@ -29,6 +29,6 @@ public class Oscillator : MonoBehaviour
         //Plugging our X value into the Mathf.Sin function turns gives us the value of the sine wave at the X value
         //Multiplying THAT by transform.up (0, 1, 0) gives us a vector up/down of oscillilating magnitude 
         //Adding that oscilliating vector onto the GameObject's start position makes it bop up and down along it's y axis 
-        transform.position = initialPos + (transform.up * Mathf.Sin(sineWaveX) * oscillateAmplitude);
+        gameObject.transform.position = initialPos + (gameObject.transform.up * Mathf.Sin(sineWaveX) * oscillateAmplitude);
     }
 }

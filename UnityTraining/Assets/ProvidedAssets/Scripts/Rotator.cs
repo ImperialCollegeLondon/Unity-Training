@@ -13,6 +13,6 @@ public class Rotator : MonoBehaviour
         // We multiply our speed by Time.deltaTime (the time that's passed since the last Update)
         // If more time has passed since last update, we want to rotate further, so the rotation speed looks smooth
         // Space.self indicates we want to rotate around the local "up" vector, not the global up vector
-        transform.Rotate(Vector3.up, rotateSpeed * Time.deltaTime, Space.Self);
+        gameObject.transform.Rotate(Vector3.up, rotateSpeed * Time.deltaTime, Space.Self);
     }
 }

@@ -9,7 +9,7 @@ public class FinishLineController : MonoBehaviour
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>(); //Save a reference to the AudioSource
+        audioSource = gameObject.GetComponent<AudioSource>(); //Save a reference to the AudioSource
     }
 
     //Unity calls OnTriggerEnter automatically when two colliders meet (and one of them is a trigger)

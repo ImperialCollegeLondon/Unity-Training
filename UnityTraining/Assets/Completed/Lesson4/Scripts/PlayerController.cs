@@ -18,8 +18,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
-        startPosition = transform.position;
+        rigidbody = gameObject.GetComponent<Rigidbody>();
+        startPosition = gameObject.transform.position;
     }
 
     //Reading player input in update
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
     public void Respawn()
     {
         //Move the GameObject back to where it started, and cancel all velocity 
-        transform.position = startPosition;
+        gameObject.transform.position = startPosition;
         rigidbody.velocity = Vector3.zero;
         rigidbody.angularVelocity = Vector3.zero;
     }

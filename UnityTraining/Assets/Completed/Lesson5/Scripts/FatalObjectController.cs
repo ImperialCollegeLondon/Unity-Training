@@ -9,7 +9,7 @@ public class FatalObjectController : MonoBehaviour
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>(); //Save a reference to the AudioSource
+        audioSource = gameObject.GetComponent<AudioSource>(); //Save a reference to the AudioSource
     }
 
     //Unity calls OnCollisionEnter automatically when two colliders meet (when neither are trigger, and one has a RigidBody)

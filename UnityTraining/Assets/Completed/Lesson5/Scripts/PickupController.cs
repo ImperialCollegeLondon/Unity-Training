@@ -15,8 +15,8 @@ public class PickupController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>(); //Save a reference to the AudioSource
-        renderer = GetComponent<Renderer>(); //Also save a reference to the renderer!
+        audioSource = gameObject.GetComponent<AudioSource>(); //Save a reference to the AudioSource
+        renderer = gameObject.GetComponent<Renderer>(); //Also save a reference to the renderer!
     }
 
     //Unity calls OnTriggerEnter automatically when two colliders meet (and one of them is a trigger)
